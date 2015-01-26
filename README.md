@@ -1,10 +1,3 @@
-The [AngularJS TodoMVC](https://github.com/tastejs/todomvc/tree/gh-pages/architecture-examples/angularjs) app ported to the [Aerobatic](http://www.aerobatic.io) HTML5 platform.
+The [AngularJS TodoMVC](https://github.com/tastejs/todomvc/tree/gh-pages/architecture-examples/angularjs) app running on the [Aerobatic](http://www.aerobatic.com) using StrongLoop's [LoopBack Framework](http://strongloop.com/node-js/loopback-framework/) as the backend API. The API is running on Heroku with MongoLab as the database.
 
-[See it live](http://todomvc-angular.aerobaticapp.com)
-
-** Running locally
-  npm install
-  bower install
-
-** Running tests
-  grunt test
+[See it live](http://http://todos-strongloop.aerobaticapp.com/)

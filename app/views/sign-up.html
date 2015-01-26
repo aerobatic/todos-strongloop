@@ -1,0 +1,23 @@
+<section id="todoapp">
+  <header id="header">
+    <h1>todos</h1>
+  </header>
+  <form class="auth-form" name="form" ng-submit="register()">
+    <h2>Sign-Up</h2>
+    <div class="form-group">
+      <label>Email</label>
+      <input name="email" type="text" ng-model="user.email">
+    </div>
+
+    <div class="form-group">
+      <label>Password</label>
+      <input name="password" type="password" ng-model="user.password">
+    </div>
+
+    <div class="actions">
+      <label></label>
+      <button type="submit">Sign up</button>
+      <button type="button" ng-click="cancel()">Cancel</button>
+    </div>
+  </form>
+</section>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" data-framework="angularjs">
+	<head>
+		<meta charset="utf-8">
+		<title>AngularJS • TodoMVC</title>
+    <base href="/">
+    <link rel="icon" type="image/png" sizes="64x64" href="favicons/favicon.png">
+
+    <link data-aero-build="debug" rel="stylesheet" href="bower_components/todomvc-common/base.css">
+		<link data-aero-build="debug" rel="stylesheet" href="css/style.css">
+
+		<link data-aero-build="release" rel="stylesheet" href="app.min.css">
+		<style>[ng-cloak] { display: none; }</style>
+	</head>
+	<body ng-app="todomvc">
+		<div ng-view></div>
+
+    <div data-aero-build="release">
+      <script src="app.min.js"></script>
+    </div>
+    <div data-aero-build="debug">
+      <script src="node_modules/angular/angular.js"></script>
+      <script src="node_modules/angular-route/angular-route.js"></script>
+      <script src="node_modules/angular-resource/angular-resource.js"></script>
+      <script src="node_modules/angular-aerobatic/angular-aerobatic.js"></script>
+      <script data-aero-src="js/**/*.js"></script>
+    </div>
+
+    <script type="text/ng-template" id="logout.html">
+    <!-- Angular is requiring a template to fire the controller. So just giving it an empy view. -->
+    </script>
+	</body>
+</html>
