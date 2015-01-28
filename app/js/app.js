@@ -11,7 +11,6 @@ angular.module('todomvc', ['ngRoute', 'lbServices', 'Aerobatic', 'templates'])
 
 		$locationProvider.html5Mode(true);
 		LoopBackResourceProvider.setUrlBase('https://loopback-todos-api.herokuapp.com/api');
-		// LoopBackAuthProvider.rememberMe = true;
 
     $httpProvider.interceptors.push(function($q, $location) {
       return {
@@ -45,32 +44,4 @@ angular.module('todomvc', ['ngRoute', 'lbServices', 'Aerobatic', 'templates'])
 	})
 	.run(function($rootScope, $location, $log, $timeout, AuthService) {
 		AuthService.init();
-
-		// $rootScope.$on('$locationChangeStart', function(event, newUrl, oldUrl) {
-		// 	// if (redirectingToLogin === true) return;
-
-  //     // redirect to login page if not logged in
-  //     if (!$rootScope.currentUser) {
-  //     	if (newUrl && /login/.test(newUrl) === false) {
-  //     		// redirectingToLogin = true;
-	 //      	$log.info("No current user, redirecting to login");
-	 //      	$timeout(function() {
-	 //      		$location.path('/login');	
-	 //      	})
-	      	
-	 //      	event.preventDefault();
-	 //      	return;
-	 //        // event.preventDefault(); //prevent current page from loading
-	 //        // $rootScope.$evalAsync(function() {
-	 //        	// redirectingToLogin = false;
-	 //        	// $location.path('/login');
-	 //        // });
-	        
-	 //        // event.preventDefault();
-	 //       //  $rootScope.$evalAsync(function() {
-		//       //   $location.path('/login');
-		//       // });
-	 //      }
-  //     }
-  //   });
 	});

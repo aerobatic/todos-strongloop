@@ -14,7 +14,10 @@ angular.module('todomvc').controller('AuthLoginController', function($scope, Aut
   };
 
   $scope.signup = function() {
-    $location.path('/sign-up');
+    AuthService.register($scope.user.email, $scope.user.password)
+      .then(function() {
+        $location.path('/sign-up-success');
+      });
   };
 })
 .controller('AuthLogoutController', function($scope, AuthService, $location, $log) {

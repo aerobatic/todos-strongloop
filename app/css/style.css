@@ -29,6 +29,10 @@ form.auth-form {
   padding: 20px 50px;
 }
 
+form.auth-form h2 {
+  margin-bottom:20px;
+}
+
 .form-group {
   padding: 4px;
 }
@@ -105,7 +109,7 @@ main select,
 textarea {
   width:300px;
 }
-input[type='text'], input[type=password] {
+input[type='text'], input[type=password], input[type=email] {
   font: 14px 'Courier New';
   padding: 5px;
   width: 200px;
